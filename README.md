@@ -1,2 +1,2 @@
 # firebase-auth
-Firebase authentication
+Firebase authentication & Firestore
