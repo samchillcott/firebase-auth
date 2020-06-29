@@ -140,6 +140,16 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+
+  // Make auth and firestore reference
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+
+// update firestore settings (for v5 so might not need it)
+
+db.settings({ timestampsInSnapshots: true });
+
+
 </script>
 
   <!-- Compiled and minified JavaScript -->
