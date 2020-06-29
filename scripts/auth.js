@@ -1,14 +1,14 @@
 // sign up
 const signupform = document.querySelector("#signup-form");
 
-signupform.addEventListener("submit", (e) => {
+signupForm.addEventListener("submit", (e) => {
 	e.preventDefault();
 
 	// get user email
-	const email = signupform["signup-email"].value;
+	const email = signupForm["signup-email"].value;
 
 	//get user password
-	const password = signupform["signup-password"].value;
+	const password = signupForm["signup-password"].value;
 
 	// sign up user
 	auth.createUserWithEmailAndPassword(email, password).then((cred) => {
@@ -16,6 +16,6 @@ signupform.addEventListener("submit", (e) => {
 
 		const modal = document.querySelector("modal-signup");
 		M.Modal.getInstance(modal).close();
-		signupform.reset();
+		signupForm.reset();
 	});
 });
