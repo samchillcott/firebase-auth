@@ -1,5 +1,5 @@
 // sign up
-const signupform = document.querySelector("#signup-form");
+const signupForm = document.querySelector("#signup-form");
 
 signupForm.addEventListener("submit", (e) => {
 	e.preventDefault();
@@ -15,7 +15,7 @@ signupForm.addEventListener("submit", (e) => {
 		console.log(cred.user);
 
 		const modal = document.querySelector("modal-signup");
-		M.Modal.getInstance(modal).close();
+		// M.Modal.getInstance(modal).close();
 		signupForm.reset();
 	});
 });
